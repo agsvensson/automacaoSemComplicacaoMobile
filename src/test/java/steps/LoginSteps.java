@@ -1,13 +1,13 @@
 package steps;
 
 import core.Driver;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import pages.LoginPage;
-import pages.ProdutosPage;
 
 import java.net.MalformedURLException;
 import java.util.Map;
@@ -21,10 +21,16 @@ public class LoginSteps {
     @Before
     public void inicializaTeste() throws MalformedURLException {
         Driver.inicializaDriver();
+//        Driver.inicializaDriverPerfecto();
+    }
+
+    @After
+    public void finalizaTeste() {
+        Driver.getAppiumDriver().quit();
     }
 
     @DataTableType(replaceWithEmptyString = "[blank]")
-    public String stringType(String cell){
+    public String stringType(String cell) {
         return cell;
     }
 
