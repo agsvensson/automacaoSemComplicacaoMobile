@@ -17,7 +17,7 @@ Funcionalidade:  Login
     Entao valido que no campo erro email exibe a mensagem "<msg>"
     Exemplos:
       | cenario                | email                           | senha  | msg                             |
-      | com email inválido     | teste                           | 123456 | O email não é válido.           |
+      | com email invalido     | teste                           | 123456 | O email não é válido.           |
       | com email em branco    | [blank]                         | 123456 | O campo de email é obrigatório. |
       | com email em incorreto | incorreto@chronosacademy.com.br | 123456 | Email ou senha incorretos.      |
 
@@ -29,5 +29,5 @@ Funcionalidade:  Login
     Entao valido que no campo erro senha exibe a mensagem "<msg>"
     Exemplos:
       | cenario             | email                       | senha   | msg                                      |
-      | com senha inválida  | teste@chronosacademy.com.br | 123     | A senha deve ter no mínimo 6 caracteres. |
+      | com senha invalida  | teste@chronosacademy.com.br | 123     | A senha deve ter no mínimo 6 caracteres. |
       | com senha em branco | teste@chronosacademy.com.br | [blank] | O campo de senha é obrigatório.          |

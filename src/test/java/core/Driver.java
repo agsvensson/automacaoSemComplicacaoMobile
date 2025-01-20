@@ -33,7 +33,7 @@ public class Driver {
     public static void inicializaDriverPerfecto() throws MalformedURLException {
         String cloudName = "trial";
         String securityToken = "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE3MzczODA5NTQsImp0aSI6IjFlNjg3ZDMzLTY4YzYtNDI0My1iOTk2LWI3ZDM3ZWMyMjE5MiIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6IjBhZmEwYjM2LTBmZGYtNDdjMS04MDczLThhOWUzYWJjYWYzMyIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiZGI4MGU5MjUtZmNmNC00ZmEwLTk5MWYtOTk5NmM5NGJhMGZiIiwic2Vzc2lvbl9zdGF0ZSI6ImI1YzY5MmNkLTBjZDQtNDJiMy04YjBhLWY4MjdiYTI4ZjhkNCIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwiLCJzaWQiOiJiNWM2OTJjZC0wY2Q0LTQyYjMtOGIwYS1mODI3YmEyOGY4ZDQifQ.XXgHnLPqz9IUS0kbZQZZfn1oVHZv0dSbRkNAjPnbd-8";
-        String url = "https://" + cloudName + ".perfectomobile.com/nexperience/perfectomobile/wd/hub";
+        String url = "https://"+cloudName+".perfectomobile.com/nexperience/perfectomobile/wd/hub";
         BaseOptions options = new BaseOptions<>();
         options.setPlatformName("Android");
         options.setAutomationName("uiautomator2");
