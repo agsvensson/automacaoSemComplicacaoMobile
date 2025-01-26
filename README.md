@@ -10,7 +10,7 @@
 - JUnit 5
 - Maven
 - Appium
-- Design Pattern PageObject
+- Design Patterns Page Object e Page Factory
 - Escrita de cenários com Cucumber & Gherkin
 
 #### Para clonar o projeto no Git:
